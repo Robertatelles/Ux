@@ -25,5 +25,6 @@ class LearnHeroApp extends StatelessWidget {
         // outras rotas que você for criando
       },
     );
+    
   }
 }
