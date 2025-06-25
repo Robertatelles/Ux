@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'tarefas.dart';
 import 'recompensas.dart';
-//import 'tela_ranking.dart';
-//import 'tela_personagens.dart';
-//import 'tela_quiz.dart';
-import 'package:projeto_ux/screens/emdesenvolvimento.dart';
+import 'ranking.dart';
+import 'personagens.dart';
+import 'quiz.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TelaMenu extends StatelessWidget {
   const TelaMenu({super.key});
@@ -13,86 +13,79 @@ class TelaMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Stack(
+      body: Stack(
+        children: [
+          ListView(
+            padding: const EdgeInsets.all(16),
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const Center(
-                    child: Text(
-                      'Olá, Sarah',
-                      style: TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Jura',
-                      ),
+              Center(
+                child: Text(
+                  'Olá, Sarah',
+                  style: GoogleFonts.jua(
+                    textStyle: const TextStyle(
+                      fontSize: 50,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 24),
-                  Expanded(
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          _buildBotaoMenu(
-                            context,
-                            cor: Colors.red,
-                            icone: Icons.checklist,
-                            texto: 'Ver Tarefas',
-                            rota: const TelaTarefas(),
-                          ),
-                          const SizedBox(height: 12),
-                          _buildBotaoMenu(
-                            context,
-                            cor: Colors.orange,
-                            icone: Icons.card_giftcard,
-                            texto: 'Recompensas',
-                            rota: const TelaRecompensas(),
-                          ),
-                          const SizedBox(height: 12),
-                          _buildBotaoMenu(
-                            context,
-                            cor: Colors.purple,
-                            icone: Icons.emoji_events,
-                            texto: 'Ranking',
-                            rota: const EmDesenvolvimento(),
-                          ),
-                          const SizedBox(height: 12),
-                          _buildBotaoMenu(
-                            context,
-                            cor: Colors.blue,
-                            icone: Icons.person,
-                            texto: 'Personagens',
-                            rota: const EmDesenvolvimento(),
-                          ),
-                          const SizedBox(height: 12),
-                          _buildBotaoMenu(
-                            context,
-                            cor: Colors.green,
-                            icone: Icons.quiz,
-                            texto: 'Abrir Quiz',
-                            rota: const EmDesenvolvimento(),
-                          ),
-                          const SizedBox(height: 80),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
+                ),
               ),
-              Positioned(
-                bottom: 0,
-                right: 0,
-                child: Image.asset(
-                  'assets/joinha.png',
-                  height: 320,
+              const SizedBox(height: 24),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      _buildBotaoMenu(
+                        context,
+                        cor: Colors.red,
+                        icone: Icons.checklist,
+                        texto: 'Ver Tarefas',
+                        rota: const TelaTarefas(),
+                      ),
+                      const SizedBox(height: 12),
+                      _buildBotaoMenu(
+                        context,
+                        cor: Colors.orange,
+                        icone: Icons.card_giftcard,
+                        texto: 'Recompensas',
+                        rota: const TelaRecompensas(),
+                      ),
+                      const SizedBox(height: 12),
+                      _buildBotaoMenu(
+                        context,
+                        cor: Colors.purple,
+                        icone: Icons.emoji_events,
+                        texto: 'Ranking',
+                        rota: const TelaRanking(),
+                      ),
+                      const SizedBox(height: 12),
+                      _buildBotaoMenu(
+                        context,
+                        cor: Colors.blue,
+                        icone: Icons.person,
+                        texto: 'Personagens',
+                        rota: const TelaPersonagens(),
+                      ),
+                      const SizedBox(height: 12),
+                      _buildBotaoMenu(
+                        context,
+                        cor: Colors.green,
+                        icone: Icons.quiz,
+                        texto: 'Abrir Quiz',
+                        rota: const TelaQuiz(),
+                      ),
+                      const SizedBox(height: 80),
+                    ],
+                  ),
                 ),
               ),
             ],
           ),
-        ),
+          Positioned(
+            bottom: 0,
+            right: 0,
+            child: Image.asset('assets/joinha.png', height: 320),
+          ),
+        ],
       ),
     );
   }
