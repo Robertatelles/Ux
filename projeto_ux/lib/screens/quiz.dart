@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:projeto_ux/screens/menu.dart';
 
 class TelaQuiz extends StatelessWidget {
@@ -28,17 +28,7 @@ class TelaQuiz extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     // Título (adiciona o título se quiser aqui)
-                    Text(
-                      'Quiz',
-                      style: GoogleFonts.jua(
-                        textStyle: const TextStyle(
-                          fontSize: 42,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 6, 6, 6),
-                        ),
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
+                    
 
                     const SizedBox(height: 24),
 
@@ -54,8 +44,8 @@ class TelaQuiz extends StatelessWidget {
                     // Botão girar
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color.fromARGB(255, 255, 221, 29),
-                        foregroundColor: const Color.fromARGB(255, 102, 27, 27),
+                        backgroundColor: const Color.fromARGB(255, 62, 159, 81),
+                        foregroundColor: const Color.fromARGB(255, 253, 253, 253),
                         textStyle: const TextStyle(
                           fontSize: 40,
                           fontWeight: FontWeight.bold,
@@ -68,7 +58,7 @@ class TelaQuiz extends StatelessWidget {
                       onPressed: () {
                         // ação do botão
                       },
-                      child: const Text('Girar'),
+                      child: const Text('Responder'),
                     ),
 
                     const SizedBox(height: 60), // espaço para a Maria
@@ -77,16 +67,7 @@ class TelaQuiz extends StatelessWidget {
               ),
             ),
 
-            // Maria posicionada corretamente no rodapé
-            Positioned(
-              bottom: 0,
-              right: MediaQuery.of(context).size.width * 0.1,
-              child: Image.asset(
-                'assets/mariasemfundo.png',
-                height: 230,
-              ),
-            ),
-          ],
+         ],
         ),
       ),
     );
