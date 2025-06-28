@@ -10,7 +10,7 @@ class TelaRecompensas extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.orange.shade50,
       appBar: AppBar(
-        title: const Text('Recompensas'),
+        //title: const Text('Recompensas'),
         backgroundColor: Colors.orange,
         centerTitle: true,
       ),
@@ -34,7 +34,7 @@ class TelaRecompensas extends StatelessWidget {
               const SizedBox(height: 24),
               Image.asset(
                 'assets/roleta.jpg',
-                height: 400,
+                height: 300,
                 fit: BoxFit.contain,
               ),
               const SizedBox(height: 40),

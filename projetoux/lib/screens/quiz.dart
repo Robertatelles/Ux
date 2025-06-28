@@ -35,7 +35,7 @@ class TelaQuiz extends StatelessWidget {
                     // Imagem do quiz
                     Image.asset(
                       'assets/quiz.png',
-                      height: 500,
+                      height: 400,
                       fit: BoxFit.contain,
                     ),
 
@@ -47,7 +47,7 @@ class TelaQuiz extends StatelessWidget {
                         backgroundColor: const Color.fromARGB(255, 62, 159, 81),
                         foregroundColor: const Color.fromARGB(255, 253, 253, 253),
                         textStyle: const TextStyle(
-                          fontSize: 40,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                         shape: RoundedRectangleBorder(
@@ -61,7 +61,7 @@ class TelaQuiz extends StatelessWidget {
                       child: const Text('Responder'),
                     ),
 
-                    const SizedBox(height: 60), // espaço para a Maria
+                    const SizedBox(height: 30), // espaço para a Maria
                   ],
                 ),
               ),

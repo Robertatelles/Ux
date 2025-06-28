@@ -83,7 +83,7 @@ class TelaMenu extends StatelessWidget {
           Positioned(
             bottom: 0,
             right: 0,
-            child: Image.asset('assets/joinha.png', height: 320),
+            child: Image.asset('assets/joinha.png', height: 200),
           ),
         ],
       ),

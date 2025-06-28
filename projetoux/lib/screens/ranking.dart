@@ -52,17 +52,17 @@ class TelaRanking extends StatelessWidget {
                   ),
                 ),
 
-                const SizedBox(height: 100), // espaço pra cabeça da Maria
+                const SizedBox(height: 20), // espaço pra cabeça da Maria
               ],
             ),
 
             // Maria fixa no rodapé
             Positioned(
   bottom: 0,
-  right: MediaQuery.of(context).size.width * 0.25, // simula o x = 0.1 do Alignment
+  right: MediaQuery.of(context).size.width * 0.17, // simula o x = 0.1 do Alignment
   child: Image.asset(
     'assets/mariasemfundo.png',
-    height: 230,
+    height: 170,
   ),
 ),
 

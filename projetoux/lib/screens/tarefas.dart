@@ -13,7 +13,7 @@ class TelaTarefas extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 235, 237, 235),
       appBar: AppBar(
-        title: const Text('Tarefas'),
+        //title: const Text('Tarefas'),
         backgroundColor: const Color.fromARGB(255, 193, 230, 193),
         leading: IconButton(
           icon: Image.asset(
