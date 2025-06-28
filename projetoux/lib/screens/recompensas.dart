@@ -7,12 +7,14 @@ class TelaRecompensas extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.orange.shade50,
+   return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 235, 237, 235),
       appBar: AppBar(
-        //title: const Text('Recompensas'),
-        backgroundColor: Colors.orange,
-        centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 193, 230, 193),
+        leading: IconButton(
+          icon: Image.asset('assets/icone_voltar.png', height: 24),
+          onPressed: () => Navigator.pop(context),
+        ),
       ),
       body: SafeArea(
         child: Padding(
