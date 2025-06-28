@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/tela_boas_vindas.dart';
+import 'screens/telaboasvindas.dart';
 import 'screens/menu.dart';
 //import 'screens/tarefas.dart';
 //import 'screens/recompensas.dart';

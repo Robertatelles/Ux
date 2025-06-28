@@ -90,7 +90,9 @@ class _TelaPersonagensState extends State<TelaPersonagens> {
                         boxShadow: [
                           if (selecionado)
                             BoxShadow(
-                              color: Colors.blue.withOpacity(0.3),
+                              color: Colors.blue.withAlpha(
+                                (255 * 0.3).toInt(),
+                              ), // atualizado
                               blurRadius: 10,
                               spreadRadius: 2,
                               offset: const Offset(0, 4),
